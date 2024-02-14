@@ -16,7 +16,10 @@ const Workshops = lazy(() => import("./components/Workshops"));
 const Register = lazy(() => import("./components/Register"));
 
 // import Download from "./components/Download";
-const Webdevelopment = lazy(() => import("./components/Webdevelopment"));
+const Webdevelopment = lazy(() => import("./pages/Webdevelopment"));
+const CyberSecurity = lazy(() => import("./pages/CyberSecurity"));
+const Flutter = lazy(() => import("./pages/Flutter"));
+const Uiux = lazy(() => import("./pages/Uiux"));
 
 // import Modal from "./components/Modal";
 
@@ -37,17 +40,23 @@ function App() {
             }
           ></Route>
 
-          <Route path="/workshops" element={
-            <Suspense fallback={<Loading></Loading>}>
-            <Workshops></Workshops>
-          </Suspense>
-          }></Route>
+          <Route
+            path="/workshops"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Workshops></Workshops>
+              </Suspense>
+            }
+          ></Route>
 
-          <Route path="/register" element={
-            <Suspense fallback={<Loading></Loading>}>
-            <Register></Register>
-          </Suspense>
-          }></Route>
+          <Route
+            path="/register"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Register></Register>
+              </Suspense>
+            }
+          ></Route>
 
           {/* <Route path="/modal" element={<Modal></Modal>}></Route> */}
 
@@ -60,6 +69,33 @@ function App() {
             element={
               <Suspense fallback={<Loading></Loading>}>
                 <Webdevelopment></Webdevelopment>
+              </Suspense>
+            }
+          ></Route>
+
+          <Route
+            path="/Cyber_security"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <CyberSecurity></CyberSecurity>
+              </Suspense>
+            }
+          ></Route>
+
+          <Route
+            path="/flutter"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Flutter></Flutter>
+              </Suspense>
+            }
+          ></Route>
+
+          <Route
+            path="/uiux"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Uiux></Uiux>
               </Suspense>
             }
           ></Route>

@@ -49,7 +49,9 @@ function Workshops() {
               </p>
             </div>
             <div className="row d-flex justify-content-around">
-              <div className="col-5 col-md-2 my-2 rounded-border hover">
+              <Link to='/uiux' className="col-5 col-md-2 my-2 rounded-border hover"
+              style={{textDecoration:"none"}}>
+              <div >
                 <div className="card bg-transparent card3">
                   <div className="card-body bg-transparent card3">
                     <h4
@@ -67,61 +69,78 @@ function Workshops() {
                   </div>
                 </div>
               </div>
-              <div className="col-5 col-md-2 my-2 rounded-border hover">
-                <div className="card bg-transparent card3">
-                  <div className="card-body bg-transparent card3">
-                    <h4
-                      style={{ fontSize: "1.3em" }}
-                      className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
-                    >
-                      Flutter
-                    </h4>
-                    <img
-                      className="d-flex justify-content-center"
-                      src={flutter}
-                      style={{ width: "120%" }}
-                      alt=""
-                    />
+              </Link>
+              <Link
+                className="col-5 col-md-2 my-2 rounded-border hover"
+                style={{textDecoration:"none"}}
+                to="/flutter"
+              >
+                <div>
+                  <div className="card bg-transparent card3">
+                    <div className="card-body bg-transparent card3">
+                      <h4
+                        style={{ fontSize: "1.3em" }}
+                        className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
+                      >
+                        Flutter
+                      </h4>
+                      <img
+                        className="d-flex justify-content-center"
+                        src={flutter}
+                        style={{ width: "120%" }}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-5 col-md-2 my-2 rounded-border hover">
-                <div className="card bg-transparent card3">
-                  <div className="card-body bg-transparent card3">
-                    <h4
-                      style={{ textAlign: "center", fontSize: "1.2em" }}
-                      className="card-title text-light d-flex  justify-content-center btn-text-gradient--gold"
-                    >
-                      Cyber Security
-                    </h4>
-                    <img
-                      className="d-flex justify-content-center"
-                      src={cybersecurity}
-                      style={{ width: "100%" }}
-                      alt=""
-                    />
+              </Link>
+              <Link
+                to="/cyber_security"
+                className="col-5 col-md-2 my-2 rounded-border hover"
+                style={{textDecoration:"none"}}
+              >
+                <div>
+                  <div className="card bg-transparent card3">
+                    <div className="card-body bg-transparent card3">
+                      <h4
+                        style={{ textAlign: "center", fontSize: "1.2em" }}
+                        className="card-title text-light d-flex  justify-content-center btn-text-gradient--gold"
+                      >
+                        Cyber Security
+                      </h4>
+                      <img
+                        className="d-flex justify-content-center"
+                        src={cybersecurity}
+                        style={{ width: "100%" }}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
-              <Link to='/web_dev'>
-              <div className="col-5 col-md-2 my-2 rounded-border hover">
-                <div className="card bg-transparent card3">
-                  <div className="card-body bg-transparent card3">
-                    <h4
-                      style={{ textAlign: "center", fontSize: "1.2em" }}
-                      className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
-                    >
-                      Web Development
-                    </h4>
-                    <img
-                      className="d-flex justify-content-center"
-                      src={webdev}
-                      style={{ width: "100%" }}
-                      alt=""
-                    />
+              </Link>
+              <Link
+                className="col-5 col-md-2 my-2 rounded-border hover"
+                style={{textDecoration:"none"}}
+                to="/web_dev"
+              >
+                <div>
+                  <div className="card bg-transparent card3">
+                    <div className="card-body bg-transparent card3">
+                      <h4
+                        style={{ textAlign: "center", fontSize: "1.2em" }}
+                        className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
+                      >
+                        Web Development
+                      </h4>
+                      <img
+                        className="d-flex justify-content-center"
+                        src={webdev}
+                        style={{ width: "100%" }}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
               </Link>
             </div>
             <div>

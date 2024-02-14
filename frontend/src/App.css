@@ -1038,3 +1038,8 @@ label {
   transition-duration: 0.5s;
   transform: scale(1.1);
 }
+
+/* events and workshops */
+.section4 {
+  background-color: rgb(9, 9, 9, 0.3);
+}
