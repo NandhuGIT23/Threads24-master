@@ -245,7 +245,7 @@ nav .menu span {
   }
 }
 
-.nav-item:hover {
+li:hover {
   background-color: transparent;
   color: gold;
 }

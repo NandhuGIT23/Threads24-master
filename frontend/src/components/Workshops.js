@@ -103,6 +103,7 @@ function Workshops() {
                   </div>
                 </div>
               </div>
+              <Link to='/web_dev'>
               <div className="col-5 col-md-2 my-2 rounded-border hover">
                 <div className="card bg-transparent card3">
                   <div className="card-body bg-transparent card3">
@@ -121,6 +122,7 @@ function Workshops() {
                   </div>
                 </div>
               </div>
+              </Link>
             </div>
             <div>
               <hr style={{ color: "white" }} />

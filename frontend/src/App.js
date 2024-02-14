@@ -2,7 +2,6 @@ import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
 import { lazy, Suspense } from "react";
 
-import { Navbar } from "./components/Navbar";
 import Loading from "./components/Loading";
 // import Home from "./components/Home";
 const Home = lazy(() => import("./components/Home"));
@@ -17,7 +16,7 @@ const Workshops = lazy(() => import("./components/Workshops"));
 const Register = lazy(() => import("./components/Register"));
 
 // import Download from "./components/Download";
-const Download = lazy(() => import("./components/Download"));
+const Webdevelopment = lazy(() => import("./components/Webdevelopment"));
 
 // import Modal from "./components/Modal";
 
@@ -56,6 +55,14 @@ function App() {
           path='/download'
           element= {<Download></Download>}
           ></Route> */}
+          <Route
+            path="/web_dev"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Webdevelopment></Webdevelopment>
+              </Suspense>
+            }
+          ></Route>
         </Routes>
       </BrowserRouter>
     </div>

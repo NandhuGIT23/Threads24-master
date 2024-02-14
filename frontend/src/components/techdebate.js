@@ -2,7 +2,6 @@ import React from 'react';
 import { Container, Row, Col, Button } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faClock, faMapMarkerAlt } from '@fortawesome/free-solid-svg-icons';
-import Navbar from './Navbar';
 import { Link } from 'react-router-dom';
 import spaceTorchImage from '../images/space_torch.jpg';
 import mismatchimg from '../images/techShow1.svg';
