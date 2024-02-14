@@ -1,9 +1,9 @@
 import React, { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from "../images/ThreadsLogo.png";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import Download from "./Download";
-import "../App.css"; // Import the custom CSS file
+import "../App.css";
 
 export const Navbar1 = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -12,7 +12,7 @@ export const Navbar1 = () => {
 
   const askemail = async (e) => {
     e.preventDefault();
-    const email = prompt("enter");
+    const email = prompt("Enter your registered email id:");
 
     const details = { email };
 
@@ -21,7 +21,6 @@ export const Navbar1 = () => {
       body: JSON.stringify(details),
       headers: {
         "Content-Type": "application/json",
-        // 'Authorization': Beared ${user.token}
       },
     });
 
@@ -40,8 +39,12 @@ export const Navbar1 = () => {
 
   return (
     <nav
-      className="navbar navbar-expand-lg navbar-light"
-      style={{ backgroundColor: "rgba(9, 9,9, 0.5)" }}
+      className="navbar navbar-expand-lg navbar-dark"
+      style={{
+        backgroundColor: "rgba(9, 9,9, 0.5)",
+        // position: "fixed",
+        zIndex: "1000",
+      }}
     >
       <div className="container-fluid ">
         <Link
@@ -63,17 +66,12 @@ export const Navbar1 = () => {
               color: "transparent",
               marginRight: "10px",
               width: "1.8em",
-              // height: "50px" // Adjust the spacing between logo and text
             }}
           />
           <h3
             className="btn-text-gradient--gold dark"
             style={{
-              // backgroundImage:
-              //   "-webkit-linear-gradient(bottom, #ffffdb, #a16422)",
-              // WebkitBackgroundClip: "text",
-              // color: "transparent",
-              margin: "0", // Remove margin to align text and logo
+              margin: "0",
             }}
           >
             Threads'24
@@ -93,7 +91,7 @@ export const Navbar1 = () => {
           onClick={() => setMenuOpen(!menuOpen)}
         >
           <span
-            className="navbar-toggler-icon"
+            className="navbar-toggler-icon text-light"
             style={{
               color: "white",
               width: "40px",

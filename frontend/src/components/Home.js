@@ -2,11 +2,24 @@ import React from "react";
 import { Navbar1 } from "./Navbar1";
 import HomeFooter from "./HomeFooter";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
-
-import $ from "jquery";
 import { Link } from "react-router-dom";
+import { useEffect } from "react";
 
 const Home = () => {
+  useEffect(() => {
+    const img = new Image();
+    img.src = "./images/space_torch.jpg"; // Replace with the URL of your background image
+    img.onload = () => {
+      document.querySelector(
+        ".landingpage"
+      ).style.backgroundImage = `url('${img.src}')`;
+    };
+  }, []);
+
+  const scrollToTop = () => {
+    window.scrollTo(0, 0);
+  };
+
   return (
     <div className="landingpage">
       <section className="stars">
@@ -14,8 +27,6 @@ const Home = () => {
         <span className="star2"></span>
       </section>
       <div className="home-container">
-        {/* <div className="space"></div> */}
-
         <Navbar1 />
         <div className="home-banner-container">
           <div className="home-text-section">
@@ -43,7 +54,11 @@ const Home = () => {
       </div>
       <div className="section2">
         <div class="content-cards1">
-          <Link style={{ textDecoration: "none" }} to="/events">
+          <Link
+            onClick={scrollToTop}
+            style={{ textDecoration: "none" }}
+            to="/events"
+          >
             <div className="card1 ">
               <h2 className="btn-text-gradient--gold dark">
                 5 Technical events
@@ -51,11 +66,15 @@ const Home = () => {
               <p className="subtitle1 px-1">
                 Embark on a Journey of Innovation: Unveiling 5 Cutting-Edge
                 Technical Events to Ignite Your Curiosity! <br />
-                Click to know more!!
+                <strong>Click to know more!!</strong>
               </p>
             </div>
           </Link>
-          <Link style={{ textDecoration: "none" }} to="/events">
+          <Link
+            onClick={scrollToTop}
+            style={{ textDecoration: "none" }}
+            to="/events"
+          >
             <div className="card1">
               <h2 className="btn-text-gradient--gold dark">
                 5 Non technical events
@@ -67,12 +86,16 @@ const Home = () => {
               </p>
             </div>
           </Link>
-          <Link style={{ textDecoration: "none" }} to="/workshops">
+          <Link
+            onClick={scrollToTop}
+            style={{ textDecoration: "none" }}
+            to="/workshops"
+          >
             <div className="card1">
-              <h2 className="btn-text-gradient--gold dark">3 Workshops</h2>
+              <h2 className="btn-text-gradient--gold dark">4 Workshops</h2>
               <p className="subtitle1 px-1">
-                Unlock Your Potential: Immerse Yourself in 10 Inspiring
-                Workshops to Learn, Create, and Grow <br />
+                Unlock Your Potential: Immerse Yourself in 4 Inspiring Workshops
+                to Learn, Create, and Grow <br />
                 Click to know more!!
               </p>
             </div>
@@ -85,6 +108,26 @@ const Home = () => {
           <span> </span>
           Register NOW
         </a>
+      </div>
+      <div
+        style={{
+          display: "flex",
+          justifyContent: "center",
+          fontSize: "20px",
+        }}
+        className="mt-5"
+      >
+        <p
+          style={{ fontSize: "0.8em", textAlign: "left" }}
+          className="primary-text2"
+        >
+          For Queries, Contact: <br />
+          Sarvesh - 9345315384 <br />
+          Srikanth - 9345583144 <br />
+          Senthil Kumar - 9994521119
+          <br />
+          Rampachan - 8903837949
+        </p>
       </div>
 
       <div>

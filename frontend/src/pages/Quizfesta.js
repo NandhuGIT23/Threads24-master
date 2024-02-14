@@ -5,10 +5,12 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import UiuxImg from "../images/uiux2.png";
+import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
+import quizholic from "../images/quizholic.png";
 
-const Uiux = () => {
+
+const Quizfesta = () => {
   return (
     <div
       className="section4"
@@ -21,7 +23,7 @@ const Uiux = () => {
     >
       <Navbar1 />
       <Container fluid style={{ backgroundColor: "rgb(9,9,9,0.3)" }}>
-        <h1 className="eventName welcometag text-light mx-5">UI/UX Design</h1>
+        <h1 className="eventName welcometag text-light mx-5">QUIZ FESTA</h1>
         <p
           className="eventDesc mx-5 mb-5 text-light"
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
@@ -36,7 +38,7 @@ const Uiux = () => {
             <Col md={6}>
               <div className="banner">
                 <img
-                  src={UiuxImg}
+                  src={quizholic}
                   alt="RPA Workshop"
                   className="img-fluid rounded  mx-auto d-block"
                   style={{ width: "70%" }}
@@ -54,7 +56,7 @@ const Uiux = () => {
               </div>
             </Col>
             <Col md={6}>
-              <h1 className="heads text-light">About the Workshop</h1>
+              <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
                 Discover the fundamentals of building dynamic websites and web
                 applications, from HTML and CSS to JavaScript and beyond. Learn
@@ -119,4 +121,4 @@ const Uiux = () => {
   );
 };
 
-export default Uiux;
+export default Quizfesta;

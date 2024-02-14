@@ -5,7 +5,7 @@ import { Container, Row, Col, Button } from "react-bootstrap";
 import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import CyberSecurityImg from "../images/cybersecurity.png";
+import webDevImg from "../images/webdev2.png";
 import Footer from "../components/Footer";
 
 const WebDevelopment = () => {
@@ -38,7 +38,7 @@ const WebDevelopment = () => {
             <Col md={6}>
               <div className="banner">
                 <img
-                  src={CyberSecurityImg}
+                  src={webDevImg}
                   alt="RPA Workshop"
                   className="img-fluid rounded  mx-auto d-block"
                   style={{ width: "70%" }}

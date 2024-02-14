@@ -4,47 +4,42 @@ import { QRCodeSVG } from "qrcode.react";
 
 function Download({ user }) {
   const [qr, setQr] = useState(null);
-  const [initialRender, setInitialRender] = useState(true);
 
   useEffect(() => {
-    if (!initialRender) {
-      const generateQRCode = async () => {
-        console.log(user._id);
-        let q = await setQr(
-          <div className="setup">
-            <QRCodeSVG
-              value={user._id}
-              style={{ width: "200px", height: "200px" }}
-            />
-            {/* <br></br> */}
-            {user.name}
-          </div>
-        );
-        await convertToImageAndDownload(q);
-      };
+    const generateQRCode = async () => {
+      console.log(user._id);
+      setQr(
+        <div className="setup">
+          <QRCodeSVG
+            value={user._id}
+            style={{ width: "200px", height: "200px" }}
+          />
+          {/* <br></br> */}
+          {user.name}
+        </div>
+      );
+    };
 
-      generateQRCode();
-    } else {
-      setInitialRender(false);
+    generateQRCode();
+  }, [user]);
+
+  useEffect(() => {
+    if (qr) {
+      convertToImageAndDownload();
     }
-  }, [user, initialRender]);
+  }, [qr]);
 
-  const convertToImageAndDownload = async (q) => {
-    const divToConvert = await document.getElementsByClassName("setup")[0];
-    console.log("hello");
-    console.log(divToConvert);
+  const convertToImageAndDownload = async () => {
+    const divToConvert = document.querySelector(".setup");
+    if (!divToConvert) return;
 
-    await html2canvas(divToConvert)
+    html2canvas(divToConvert)
       .then((canvas) => {
-        console.log("kkk");
         const dataUrl = canvas.toDataURL("image/png");
-        console.log(dataUrl);
         const a = document.createElement("a");
-        console.log(a);
         a.href = dataUrl;
         a.download = "Sona-threads-ID.png";
         a.click();
-        setQr(null);
       })
       .catch((error) => {
         console.error("Error converting div to image:", error);

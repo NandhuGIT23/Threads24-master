@@ -12,6 +12,7 @@ import phonePe from "../images/phonepe.jpeg";
 import paytm from "../images/PAYTM.jpeg";
 
 const Register = () => {
+
   const details = {};
   const navigate = useNavigate();
   const [showPage, setShowPage] = useState(false);

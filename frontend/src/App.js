@@ -3,33 +3,46 @@ import "./App.css";
 import { lazy, Suspense } from "react";
 
 import Loading from "./components/Loading";
-// import Home from "./components/Home";
 const Home = lazy(() => import("./components/Home"));
 
-// import Events from "./components/Events";
 const Events = lazy(() => import("./components/Events"));
 
-// import Workshops from "./components/Workshops";
 const Workshops = lazy(() => import("./components/Workshops"));
 
-// import Register from "./components/Register";
 const Register = lazy(() => import("./components/Register"));
 
-// import Download from "./components/Download";
+//workshops
 const Webdevelopment = lazy(() => import("./pages/Webdevelopment"));
 const CyberSecurity = lazy(() => import("./pages/CyberSecurity"));
 const Flutter = lazy(() => import("./pages/Flutter"));
 const Uiux = lazy(() => import("./pages/Uiux"));
 
-// import Modal from "./components/Modal";
+//events
+const Actlikethis= lazy(() => import("./pages/Actlikethis"));
+const Captureflag= lazy(() => import("./pages/Captureflag"));
+const Codeclash= lazy(() => import("./pages/Codeclash"));
+const Codequill= lazy(() => import("./pages/Codequill"));
+const Digitaljunction= lazy(() => import("./pages/Digitaljunction"));
+const Karaoke= lazy(() => import("./pages/Karaoke"));
+const Paperpresentation= lazy(() => import("./pages/Paperpresentation"));
+const Picoftheday= lazy(() => import("./pages/Picoftheday"));
+const Quizfesta= lazy(() => import("./pages/Quizfesta"));
+const Treasurehunt= lazy(() => import("./pages/Treasurehunt"));
+
 
 function App() {
   return (
     <div className="App">
       <BrowserRouter>
-        {/* <Home></Home> */}
         <Routes>
-          <Route path="/" element={<Home></Home>}></Route>
+          <Route
+            path="/"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Home></Home>
+              </Suspense>
+            }
+          ></Route>
 
           <Route
             path="/events"
@@ -57,13 +70,6 @@ function App() {
               </Suspense>
             }
           ></Route>
-
-          {/* <Route path="/modal" element={<Modal></Modal>}></Route> */}
-
-          {/* <Route
-          path='/download'
-          element= {<Download></Download>}
-          ></Route> */}
           <Route
             path="/web_dev"
             element={
@@ -96,6 +102,87 @@ function App() {
             element={
               <Suspense fallback={<Loading></Loading>}>
                 <Uiux></Uiux>
+              </Suspense>
+            }
+          ></Route>
+
+          <Route
+            path="/Actlikethis"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Actlikethis></Actlikethis>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Captureflag"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Captureflag></Captureflag>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Codeclash"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Codeclash></Codeclash>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Codequill"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Codequill></Codequill>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Digitaljunction"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Digitaljunction></Digitaljunction>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Karaoke"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Karaoke></Karaoke>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Paperpresentation"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Paperpresentation></Paperpresentation>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Picoftheday"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Picoftheday></Picoftheday>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Quizfesta"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Quizfesta></Quizfesta>
+              </Suspense>
+            }
+          ></Route>
+          <Route
+            path="/Treasurehunt"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <Treasurehunt></Treasurehunt>
               </Suspense>
             }
           ></Route>

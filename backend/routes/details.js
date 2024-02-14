@@ -216,7 +216,7 @@ router.post("/registersona", async (req, res) => {
             { $inc: { uiux: 1 } }
           );
         } else if (workshop == "flutter") {
-          if (flutterc > 100) {
+          if (flutterc > 3) {
             res.json({ msgg: "Flutter workshop is filled", flag: false });
             return;
           }

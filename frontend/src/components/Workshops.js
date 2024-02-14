@@ -1,18 +1,23 @@
 import React from "react";
-import { useState } from "react";
-import BannerBackground from "../images/space_torch.jpg";
+import { useState, useEffect } from "react";
 import { Navbar1 } from "./Navbar1";
-import WorkshopEvents from "./workshopevents";
-// import RegisterButton from "./registerbutton";
 import { Link } from "react-router-dom";
-// import HomeFooter from "./HomeFooter";
 import Footer from "./Footer";
-import uiux from "../images/uiux.png";
-import cybersecurity from "../images/cybersecurity.png";
-import flutter from "../images/flutter.png";
-import webdev from "../images/webdev.png";
+import uiux from "../images/uiux2.png";
+import cybersecurity from "../images/Cybersecurity2.png";
+import flutter from "../images/flutter2.png";
+import webdev from "../images/webdev2.png";
 
 function Workshops() {
+  
+  useEffect(() => {
+    const img = new Image();
+    img.src = './images/space_torch.jpg'; // Replace with the URL of your background image
+    img.onload = () => {
+      document.querySelector('.landingpage').style.backgroundImage = `url('${img.src}')`;
+    };
+  }, []);
+
   const [isMenuOpen, setMenuOpen] = useState(false);
 
   const toggleMenu = () => {
@@ -21,6 +26,10 @@ function Workshops() {
 
   return (
     <div className="whole">
+      <section style={{ zIndex: "0" }} className="stars">
+        <span className="star1"></span>
+        <span className="star2"></span>
+      </section>
       <Navbar1 />
       <div className="section3">
         <div className="container ">
@@ -49,30 +58,33 @@ function Workshops() {
               </p>
             </div>
             <div className="row d-flex justify-content-around">
-              <Link to='/uiux' className="col-5 col-md-2 my-2 rounded-border hover"
-              style={{textDecoration:"none"}}>
-              <div >
-                <div className="card bg-transparent card3">
-                  <div className="card-body bg-transparent card3">
-                    <h4
-                      style={{ textAlign: "center", fontSize: "1.2em" }}
-                      className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
-                    >
-                      UI/UX
-                    </h4>
-                    <img
-                      className="d-flex justify-content-center"
-                      src={uiux}
-                      style={{ width: "100%" }}
-                      alt=""
-                    />
+              <Link
+                to="/uiux"
+                className="col-5 col-md-2 my-2 rounded-border hover"
+                style={{ textDecoration: "none" }}
+              >
+                <div>
+                  <div className="card bg-transparent card3">
+                    <div className="card-body bg-transparent card3">
+                      <h4
+                        style={{ textAlign: "center", fontSize: "1.2em" }}
+                        className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
+                      >
+                        UI/UX
+                      </h4>
+                      <img
+                        className="d-flex justify-content-center"
+                        src={uiux}
+                        style={{ width: "100%" }}
+                        alt=""
+                      />
+                    </div>
                   </div>
                 </div>
-              </div>
               </Link>
               <Link
                 className="col-5 col-md-2 my-2 rounded-border hover"
-                style={{textDecoration:"none"}}
+                style={{ textDecoration: "none" }}
                 to="/flutter"
               >
                 <div>
@@ -80,7 +92,7 @@ function Workshops() {
                     <div className="card-body bg-transparent card3">
                       <h4
                         style={{ fontSize: "1.3em" }}
-                        className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
+                        className="card-title text-light mb-4 d-flex justify-content-center btn-text-gradient--gold"
                       >
                         Flutter
                       </h4>
@@ -97,7 +109,7 @@ function Workshops() {
               <Link
                 to="/cyber_security"
                 className="col-5 col-md-2 my-2 rounded-border hover"
-                style={{textDecoration:"none"}}
+                style={{ textDecoration: "none" }}
               >
                 <div>
                   <div className="card bg-transparent card3">
@@ -120,7 +132,7 @@ function Workshops() {
               </Link>
               <Link
                 className="col-5 col-md-2 my-2 rounded-border hover"
-                style={{textDecoration:"none"}}
+                style={{ textDecoration: "none" }}
                 to="/web_dev"
               >
                 <div>
