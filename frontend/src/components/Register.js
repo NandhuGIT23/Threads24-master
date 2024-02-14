@@ -308,7 +308,7 @@ const Register = () => {
                   onClick={revert}
                 />
                 <label htmlFor="event" className="workShopTxt">
-                  Event
+                  Events (24.02.2024)
                 </label>
                 <br />
               </div>
@@ -324,7 +324,7 @@ const Register = () => {
                   onClick={revert2}
                 />
                 <label htmlFor="workshop" className="workShopTxt">
-                  Workshop
+                  Workshop (23.02.2024)
                 </label>
                 <br />
               </div>
@@ -538,6 +538,8 @@ const Register = () => {
                 <p>Enter your 12 digit transaction ID: </p>
                 <input
                   className="input"
+                  maxLength="12"
+                  minLength="12"
                   type="text"
                   name=""
                   id=""
