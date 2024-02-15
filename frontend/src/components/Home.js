@@ -90,13 +90,13 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <a className="register_btn btn2 " href="/register" target="_blank">
+        <Link className="register_btn btn2" to="/register" target="_blank">
           <span> </span>
           <span> </span>
           <span> </span>
           <span> </span>
           Register NOW
-        </a>
+        </Link>
       </div>
       <div
         style={{

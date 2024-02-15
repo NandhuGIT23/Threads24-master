@@ -207,7 +207,7 @@ router.post("/registersona", async (req, res) => {
 
       if (user.selectedWorkshops == "false") {
         if (workshop == "uiux") {
-          if (uiuxc >= 3) {
+          if (uiuxc >= 100) {
             res.json({ msgg: "UIUX workshop is filled", flag: false });
             return;
           }
@@ -287,7 +287,7 @@ router.post("/registersona", async (req, res) => {
   } else {
     try {
       if (workshop == "uiux") {
-        if (uiuxc > 5) {
+        if (uiuxc > 100) {
           // console.log("Count exceeded");
 
           return res.json({ msgg: "UIUX workshop is filled", flag: false });
@@ -314,7 +314,7 @@ router.post("/registersona", async (req, res) => {
           { _id: "65c9f395fde61a170c9bff55" },
           { $inc: { web: 1 } }
         );
-      } else {
+      } else if(workshop=='cyber_security'){
         if (cyberc > 100) {
           res.json({ msgg: "Cyber_Security workshop is filled", flag: false });
           return;
