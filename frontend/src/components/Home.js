@@ -90,7 +90,7 @@ const Home = () => {
             </div>
           </Link>
         </div>
-        <Link className="register_btn btn2" to="/register" target="_blank">
+        <Link className="register_btn btn2" to="/register">
           <span> </span>
           <span> </span>
           <span> </span>

@@ -92,13 +92,17 @@ const Register = () => {
     setShowModal(true);
     setShowForm(false);
 
-    const response = await fetch("threads/sendotp", {
-      method: "POST",
-      body: JSON.stringify({ email: email }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const response = await fetch(
+      "https://threads24.onrender.com/threads/sendotp",
+      {
+        method: "POST",
+        body: JSON.stringify({ email: email }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
+    console.log("OTP sent");
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -114,13 +118,16 @@ const Register = () => {
       selectedYear,
     };
 
-    const otpVerificationResponse = await fetch("threads/verifyotp", {
-      method: "POST",
-      body: JSON.stringify({ email: email, otp: otp }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const otpVerificationResponse = await fetch(
+      "https://threads24.onrender.com/threads/verifyotp",
+      {
+        method: "POST",
+        body: JSON.stringify({ email: email, otp: otp }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
 
     if (otpVerificationResponse.status == 200) {
       if (
@@ -129,13 +136,16 @@ const Register = () => {
         details.email.includes("csd@sonatech.ac.in")
       ) {
         console.log("EMail: ", details.email);
-        const registrationResponse = await fetch("threads/registersona", {
-          method: "POST",
-          body: JSON.stringify(details),
-          headers: {
-            "Content-Type": "application/json",
-          },
-        });
+        const registrationResponse = await fetch(
+          "https://threads24.onrender.com/threads/registersona",
+          {
+            method: "POST",
+            body: JSON.stringify(details),
+            headers: {
+              "Content-Type": "application/json",
+            },
+          }
+        );
         const responseData = await registrationResponse.json();
         console.log(responseData);
         // console.log(registrationResponse);
@@ -180,13 +190,16 @@ const Register = () => {
     const UPI_id = UPI;
     console.log(UPI_id);
 
-    const UPIresponse = await fetch("threads/register", {
-      method: "POST",
-      body: JSON.stringify({ details, UPI_id }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    });
+    const UPIresponse = await fetch(
+      "https://threads24.onrender.com/threads/register",
+      {
+        method: "POST",
+        body: JSON.stringify({ details, UPI_id }),
+        headers: {
+          "Content-Type": "application/json",
+        },
+      }
+    );
     if (UPIresponse.status == 200) {
       console.log("hi");
       alert(

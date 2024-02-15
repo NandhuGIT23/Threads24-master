@@ -51,13 +51,13 @@ function Events() {
               Note: Click on the tiles to know more about the events
             </p>
             <div className="d-flex justify-content-center my-3">
-              <a className="register_btn" href="/register" target="_blank">
+              <Link className="register_btn btn2" to="/register">
                 <span> </span>
                 <span> </span>
                 <span> </span>
                 <span> </span>
                 Register NOW
-              </a>
+              </Link>
             </div>
             <p className="text-light h3 mt-3">Technical Events</p>
 
@@ -67,7 +67,7 @@ function Events() {
             <div className="row  d-flex justify-content-around ">
               <Link
                 onClick={scrollToTop}
-                to='/coming_soon'
+                to="/coming_soon"
                 // to="/Codeclash"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
@@ -93,7 +93,7 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to='/coming_soon'
+                to="/coming_soon"
                 // to="/Paperpresentation"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
@@ -120,7 +120,7 @@ function Events() {
               <Link
                 onClick={scrollToTop}
                 // to="/Codequill"
-                to='/coming_soon'
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -145,7 +145,7 @@ function Events() {
               </Link>
               <Link
                 // to="/Captureflag"
-                to='/coming_soon'
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -171,7 +171,7 @@ function Events() {
               <Link
                 onClick={scrollToTop}
                 // to="/Digitaljunction"
-                to='/coming_soon'
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -199,7 +199,7 @@ function Events() {
               <Link
                 onClick={scrollToTop}
                 // to="/Quizfesta"
-                to='/coming_soon'
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -236,7 +236,7 @@ function Events() {
                         style={{ textAlign: "center", fontSize: "1.3em" }}
                         className="card-title text-light d-flex justify-content-center btn-text-gradient--gold"
                       >
-                        Act Like This
+                        Sales Royal
                       </h5>
                       <img
                         className="d-flex justify-content-center"
@@ -251,7 +251,7 @@ function Events() {
               <Link
                 onClick={scrollToTop}
                 // to="/Treasurehunt"
-                to='/coming_soon'
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -276,7 +276,7 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to='/coming_soon'
+                to="/coming_soon"
                 // to="/Picoftheday"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
@@ -302,7 +302,7 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to='/coming_soon'
+                to="/coming_soon"
                 // to="/Karaoke"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}

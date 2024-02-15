@@ -42,13 +42,13 @@ function Workshops() {
               providing instruction and feedback along the way.
             </p>
             <div className="d-flex justify-content-center my-3">
-              <a className="register_btn" href="/register" target="_blank">
+              <Link className="register_btn btn2" to="/register">
                 <span> </span>
                 <span> </span>
                 <span> </span>
                 <span> </span>
                 Register NOW
-              </a>
+              </Link>
             </div>
             <div>
               <hr style={{ color: "white" }} />
