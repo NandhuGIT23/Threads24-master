@@ -535,7 +535,7 @@ a span:nth-child(4) {
   font-size: 40px;
   background-image: url("./images/idcard2.png");
   background-size: cover;
-  height: 830px;
+  height: 960px;
   width: 550px;
   display: flex;
   flex-direction: column;
