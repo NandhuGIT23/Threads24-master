@@ -1,20 +1,10 @@
 import React from "react";
 import { Navbar1 } from "./Navbar1";
 import HomeFooter from "./HomeFooter";
-import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
+import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
 
 const Home = () => {
-  // useEffect(() => {
-  //   const img = new Image();
-  //   img.src = "./images/space_torch.jpg"; // Replace with the URL of your background image
-  //   img.onload = () => {
-  //     document.querySelector(
-  //       ".landingpage"
-  //     ).style.backgroundImage = `url('${img.src}')`;
-  //   };
-  // }, []);
-
   const scrollToTop = () => {
     window.scrollTo(0, 0);
   };
@@ -45,8 +35,8 @@ const Home = () => {
               Register NOW
             </a> */}
             <p style={{ fontSize: "0.8em" }} className="primary-text2">
-              Sona College of Technology, Department of Computer Science and
-              Engineering
+              Sona College of Technology <br />
+              Department of Computer Science and Engineering
             </p>
           </div>
         </div>
@@ -81,7 +71,7 @@ const Home = () => {
               <p className="subtitle1 px-1">
                 Dive into Creativity: Unraveling 5 Vibrant Non-Tech Events to
                 Spark Your Imagination! <br />
-                Click to know more!!
+                <strong>Click to know more!!</strong>
               </p>
             </div>
           </Link>
@@ -95,12 +85,12 @@ const Home = () => {
               <p className="subtitle1 px-1">
                 Unlock Your Potential: Immerse Yourself in 4 Inspiring Workshops
                 to Learn, Create, and Grow <br />
-                Click to know more!!
+                <strong>Click to know more!!</strong>
               </p>
             </div>
           </Link>
         </div>
-        <a className="register_btn btn2" href="/register" target="_blank">
+        <a className="register_btn btn2 " href="/register" target="_blank">
           <span> </span>
           <span> </span>
           <span> </span>
@@ -117,10 +107,11 @@ const Home = () => {
         className="mt-5"
       >
         <p
-          style={{ fontSize: "0.8em", textAlign: "left" }}
+          style={{ fontSize: "0.8em", textAlign: "center" }}
           className="primary-text2"
         >
-          For Queries, Contact: <br />
+          <u>For Queries, Contact:</u> <br />
+          <br />
           Sarvesh - 9345315384 <br />
           Srikanth - 9345583144 <br />
           Senthil Kumar - 9994521119

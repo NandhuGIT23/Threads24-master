@@ -4,7 +4,6 @@
   /* overflow-x: hidden; */
 }
 
-
 nav .title {
   font-size: 1.5rem;
   margin: 1rem;
@@ -28,7 +27,6 @@ nav .menu span {
 }
 
 @media (max-width: 480px) {
-
   .stars {
     /* display: none; */
     /* position: absolute; */
@@ -80,7 +78,6 @@ nav .menu span {
   }
 }
 
-
 @media (min-width: 1024px) {
   nav button {
     display: none;
@@ -129,7 +126,7 @@ li:hover {
 
 .home-banner-container {
   background-size: cover;
-  height: 100vh;
+  height: 90vh;
   position: relative;
   display: flex;
   /* padding-top: 1rem; */
@@ -152,7 +149,8 @@ li:hover {
 .primary-heading {
   font-size: clamp(2rem, 5vw, 4rem);
   /* color: #4c4c4c; */
-  color: rgb(166, 166, 166);
+  /* color: rgb(166, 166, 166); */
+  color: rgb(186, 185, 185);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -166,7 +164,8 @@ li:hover {
   max-width: 500px;
   text-align: center;
   /* color: #6a6a6a; */
-  color: rgb(166, 166, 166);
+  /* color: rgb(166, 166, 166); */
+  color: rgb(186, 185, 185);
   /* margin: 1.5rem 0rem; */
   margin-top: 1.5rem;
 }
@@ -176,13 +175,14 @@ li:hover {
   max-width: 500px;
   text-align: center;
   /* color: #6a6a6a; */
-  color: rgb(166, 166, 166);
+  /* color: rgb(166, 166, 166); */
+  color: rgb(186, 185, 185);
   /* margin: 1.5rem 0rem; */
   /* margin-top: 1.5rem; */
 }
-.secondary-button {
+/* .secondary-button {
   padding: 1rem 2.5rem;
-  /* background-color: #fe9e0d; */
+  background-color: #fe9e0d;
   background: none;
   outline: none;
   border: 0.5px solid rgb(166, 166, 166);
@@ -202,7 +202,7 @@ li:hover {
 }
 .secondary-button:hover {
   background-color: rgb(166, 166, 166);
-}
+} */
 
 /* *********************** */
 /*=============== GOOGLE FONTS ===============*/
@@ -344,7 +344,7 @@ a span:nth-child(4) {
 }
 
 .home-container h1 {
-  animation: animated-text 3s steps(29, end) 1s 1 normal both,
+  animation: animated-text 1.5s steps(29, end) 1s 1 normal both,
     animated-cursor 600ms steps(29, end) infinite;
 }
 
@@ -557,49 +557,19 @@ a span:nth-child(4) {
   }
 }
 
-
 /* Footer */
 
 .footer {
   background-color: rgb(9, 9, 9, 0.7);
 }
 
-/* .allLogos {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-} */
-.footerImg {
-  /* height: 5rem; */
-  /* width: 6.5rem; */
-  /* margin: 1rem; */
-}
-
 .sponsor {
-  /* height: 5em; */
   width: 10.5em;
 }
 .sona {
   /* height: 5em; */
   width: 10.5em;
 }
-
-/* @media (max-width: 480px) {
-  .footer {
-    display: block;
-  }
-  .footerImg {
-    height: 4em;
-    width: 5em;
-    margin: 0.5em;
-  }
-  .sponsor {
-    display: block;
-    margin: auto;
-    height: 5em;
-    width: 90%;
-  }
-} */
 
 /* ///////////////////// */
 /* Shooting stars animation */
@@ -752,6 +722,12 @@ label {
 }
 
 @media (max-width: 480px) {
+  .home-banner-container {
+    height: 55vh;
+  }
+  .home-text-section {
+    height: 70vh;
+  }
   .payment2 {
     margin: 1em;
     width: 90%;

@@ -190,7 +190,7 @@ const Register = () => {
     if (UPIresponse.status == 200) {
       console.log("hi");
       alert(
-        "Registered successfully!! You will receive a confirmation mail shortly"
+        "Registered successfully!! You will receive a confirmation mail shortly once we verify your transaction"
       );
       navigate("/");
     } else {
@@ -206,18 +206,43 @@ const Register = () => {
 
       {/* OTP page */}
       {showModal && (
-        <div className="modal1">
-          <div className="modal-content2">
-            <span className="close" onClick={handleCloseModal}>
-              &times;
-            </span>
-            <h2>Enter OTP sent to your registered mail id: </h2>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+          className="modal1"
+        >
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+            }}
+            className="modal-content2"
+          >
+            <h2 style={{ textAlign: "center" }}>
+              Enter OTP sent to your registered mail id:{" "}
+            </h2>
             <input
               type="number"
               value={otp}
               onChange={(e) => setOtp(e.target.value)}
             />
-            <button onClick={handleSubmit}>Submit</button>
+            {/* <button onClick={handleSubmit}>Submit</button> */}
+            <a
+              className="register_btn btn2 "
+              onClick={handleSubmit}
+              target="_blank"
+            >
+              <span> </span>
+              <span> </span>
+              <span> </span>
+              <span> </span>
+              Submit
+            </a>
           </div>
         </div>
       )}
