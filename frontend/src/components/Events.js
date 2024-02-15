@@ -16,13 +16,13 @@ import camera from "../images/camera.png";
 
 function Events() {
   const [isMenuOpen, setMenuOpen] = useState(false);
-  useEffect(() => {
-    const img = new Image();
-    img.src = './images/space_torch.jpg'; // Replace with the URL of your background image
-    img.onload = () => {
-      document.querySelector('.landingpage').style.backgroundImage = `url('${img.src}')`;
-    };
-  }, []);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = './images/space_torch.jpg'; // Replace with the URL of your background image
+  //   img.onload = () => {
+  //     document.querySelector('.landingpage').style.backgroundImage = `url('${img.src}')`;
+  //   };
+  // }, []);
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -67,7 +67,8 @@ function Events() {
             <div className="row  d-flex justify-content-around ">
               <Link
                 onClick={scrollToTop}
-                to="/Codeclash"
+                to='/coming_soon'
+                // to="/Codeclash"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -92,7 +93,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Paperpresentation"
+                to='/coming_soon'
+                // to="/Paperpresentation"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -117,7 +119,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Codequill"
+                // to="/Codequill"
+                to='/coming_soon'
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -141,7 +144,8 @@ function Events() {
                 </div>
               </Link>
               <Link
-                to="/Captureflag"
+                // to="/Captureflag"
+                to='/coming_soon'
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -166,7 +170,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Digitaljunction"
+                // to="/Digitaljunction"
+                to='/coming_soon'
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -193,7 +198,8 @@ function Events() {
               <p className="text-light h3 mt-3">Non-Technical Events</p>
               <Link
                 onClick={scrollToTop}
-                to="/Quizfesta"
+                // to="/Quizfesta"
+                to='/coming_soon'
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -218,7 +224,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/actlikethis"
+                // to="/actlikethis"
+                to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -243,7 +250,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Treasurehunt"
+                // to="/Treasurehunt"
+                to='/coming_soon'
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -268,7 +276,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Picoftheday"
+                to='/coming_soon'
+                // to="/Picoftheday"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -293,7 +302,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/Karaoke"
+                to='/coming_soon'
+                // to="/Karaoke"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >

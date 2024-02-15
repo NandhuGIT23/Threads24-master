@@ -56,14 +56,16 @@ const Flutter = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Workshop</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                Dive into the world of Flutter development with our
+                comprehensive workshop! From understanding the basics of Dart
+                programming language to building complex UI layouts with Flutter
+                widgets, you'll learn the essential tools and techniques for
+                creating cross-platform mobile applications. With hands-on
+                projects and expert guidance, whether you're a beginner or
+                looking to advance your Flutter skills, our workshop is designed
+                to empower you to craft polished and performant mobile
+                experiences. Reserve your spot now and kickstart your journey to
+                becoming a proficient Flutter developer!
               </p>
 
               <h1 className="heads text-light">Agenda</h1>

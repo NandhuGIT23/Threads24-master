@@ -12,7 +12,6 @@ import phonePe from "../images/phonepe.jpeg";
 import paytm from "../images/PAYTM.jpeg";
 
 const Register = () => {
-
   const details = {};
   const navigate = useNavigate();
   const [showPage, setShowPage] = useState(false);
@@ -23,7 +22,6 @@ const Register = () => {
   const [department, setDepartment] = useState("");
   const [college, setCollege] = useState("");
   const [email, setEmail] = useState("");
-  const [error, setError] = useState(null);
   const [number, setNumber] = useState(null);
   const [showHiddenDiv, setShowHiddenDiv] = useState(false);
   const [showHiddenDiv2, setShowHiddenDiv2] = useState(false);
@@ -161,6 +159,12 @@ const Register = () => {
   };
 
   const handleSubmit2 = async (e) => {
+    e.preventDefault();
+
+    if (UPI.length !== 12 || isNaN(UPI)) {
+      alert("You can only enter 12digit transaction ID");
+      return;
+    }
     const details = {
       name,
       selectedCollege,

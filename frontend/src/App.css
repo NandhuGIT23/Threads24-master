@@ -4,16 +4,6 @@
   /* overflow-x: hidden; */
 }
 
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f172a;
-  background: none;
-  color: rgb(0, 0, 0);
-  position: sticky;
-  top: 0;
-}
 
 nav .title {
   font-size: 1.5rem;
@@ -36,7 +26,7 @@ nav .menu span {
   background-color: #fff;
   border-radius: 0.2rem;
 }
-*/
+
 @media (max-width: 480px) {
 
   .stars {
@@ -80,17 +70,6 @@ nav .menu span {
     width: 100%;
   }
 
-  /* nav ul {
-    display: none;
-    flex-direction: column;
-    width: 100%;
-    margin-bottom: 0.25rem;
-  } */
-
-  /* nav ul.open {
-    display: flex;
-  } */
-
   nav ul li {
     width: 100%;
     text-align: center;
@@ -101,77 +80,6 @@ nav .menu span {
   }
 }
 
-/* ///////////////////////////// pranav nino */
-
-/* nav {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #0f172a;
-  background: none;
-  color: rgb(0, 0, 0);
-  position: sticky;
-  top: 0;
-}
-
-nav .title {
-  font-size: 1.5rem;
-  margin: 1rem;
-  font-weight: bold;
-  text-decoration: none;
-  color: white;
-  display: flex;
-}
-
-nav img {
-  width: 30px;
-  height: 30px;
-  margin-left: 10px;
-}
-
-nav .title p {
-  margin-left: 15px;
-  align-items: center;
-}
-
-nav ul {
-  display: flex;
-}
-
-nav ul li {
-  list-style: none;
-}
-
-nav ul li a {
-  display: block;
-  text-decoration: none;
-  color: white;
-  padding: 0.5rem;
-  margin: 0 0.5rem;
-  border-radius: 0.5rem;
-}
-
-nav ul li a:not(.active):hover {
-  background-color: #172554;
-}
-
-nav .menu {
-  display: none;
-  position: absolute;
-  top: 0.75rem;
-  right: 0.5rem;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 2.25rem;
-  height: 2rem;
-}
-
-nav .menu span {
-  height: 0.4rem;
-  width: 100%;
-  background-color: #fff;
-  border-radius: 0.2rem;
-} */
 
 @media (min-width: 1024px) {
   nav button {
@@ -228,11 +136,7 @@ li:hover {
 }
 
 .home-container {
-  /* overflow-x: hidden; */
   overflow-y: hidden;
-  /* background-image: url("./images/space_torch.jpg");
-  background-size: cover;
-  background-attachment: fixed; */
 }
 
 .home-text-section {
@@ -498,16 +402,6 @@ a span:nth-child(4) {
   flex-direction: column;
 }
 
-/* .front {
-  h1 {
-    font-family: Satisfy, cursive;
-    font-family: "Source Code Pro", monospace;
-    text-align: center;
-    font-size: 5rem;
-    margin: 1rem 5rem;
-    text-shadow: 0.2rem 0.2rem 0.5rem fade-out(black, 0.8);
-  }
-} */
 .section2 h1,
 .section2 h2 {
   /* background: linear-gradient(178deg, #ef2f96, #ad2fed, #ad2fed, #d53070); */
@@ -663,33 +557,6 @@ a span:nth-child(4) {
   }
 }
 
-.space {
-  transform: perspective(300px);
-  transform-style: preserve-3d;
-  position: absolute;
-  bottom: 0;
-  perspective-origin: 50% 100%;
-  left: 50%;
-  animation: rotate 105s infinite linear;
-}
-.star {
-  width: 4px;
-  height: 3px;
-  border-radius: 100%;
-  background: white;
-  position: absolute;
-  top: 0;
-  left: 0;
-  transform-origin: 0 0 -300px;
-  transform: translate3d(0, 0, -300px);
-  backface-visibility: hidden;
-}
-
-.ground {
-  background: black;
-
-  left: 50%;
-}
 
 /* Footer */
 
@@ -814,21 +681,7 @@ section {
     opacity: 0;
   }
 }
-/* span:nth-child(1) {
-  top: 0;
-  right: 200;
-  left: initial;
-  animation-delay: 10;
-  animation-duration: 3s;
-}
 
-span:nth-child(2) {
-  top: 0;
-  right: 150px;
-  left: initial;
-  animation-delay: 10s;
-  animation-duration: 3s;
-} */
 .star1 {
   top: 0;
   right: 150px;
@@ -851,7 +704,6 @@ span:nth-child(2) {
   background-image: url("./images/space_torch.jpg");
   background-size: cover;
 
-  /* color: #2b2828; */
   background-attachment: fixed;
 }
 

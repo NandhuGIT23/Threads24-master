@@ -3,18 +3,17 @@ import { Navbar1 } from "./Navbar1";
 import HomeFooter from "./HomeFooter";
 import "bootstrap/dist/css/bootstrap.min.css"; // Import Bootstrap CSS
 import { Link } from "react-router-dom";
-import { useEffect } from "react";
 
 const Home = () => {
-  useEffect(() => {
-    const img = new Image();
-    img.src = "./images/space_torch.jpg"; // Replace with the URL of your background image
-    img.onload = () => {
-      document.querySelector(
-        ".landingpage"
-      ).style.backgroundImage = `url('${img.src}')`;
-    };
-  }, []);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = "./images/space_torch.jpg"; // Replace with the URL of your background image
+  //   img.onload = () => {
+  //     document.querySelector(
+  //       ".landingpage"
+  //     ).style.backgroundImage = `url('${img.src}')`;
+  //   };
+  // }, []);
 
   const scrollToTop = () => {
     window.scrollTo(0, 0);

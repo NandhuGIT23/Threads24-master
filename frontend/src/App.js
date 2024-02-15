@@ -11,6 +11,8 @@ const Workshops = lazy(() => import("./components/Workshops"));
 
 const Register = lazy(() => import("./components/Register"));
 
+const ComingSoon = lazy(() => import("./pages/ComingSoon"));
+
 //workshops
 const Webdevelopment = lazy(() => import("./pages/Webdevelopment"));
 const CyberSecurity = lazy(() => import("./pages/CyberSecurity"));
@@ -18,17 +20,16 @@ const Flutter = lazy(() => import("./pages/Flutter"));
 const Uiux = lazy(() => import("./pages/Uiux"));
 
 //events
-const Actlikethis= lazy(() => import("./pages/Actlikethis"));
-const Captureflag= lazy(() => import("./pages/Captureflag"));
-const Codeclash= lazy(() => import("./pages/Codeclash"));
-const Codequill= lazy(() => import("./pages/Codequill"));
-const Digitaljunction= lazy(() => import("./pages/Digitaljunction"));
-const Karaoke= lazy(() => import("./pages/Karaoke"));
-const Paperpresentation= lazy(() => import("./pages/Paperpresentation"));
-const Picoftheday= lazy(() => import("./pages/Picoftheday"));
-const Quizfesta= lazy(() => import("./pages/Quizfesta"));
-const Treasurehunt= lazy(() => import("./pages/Treasurehunt"));
-
+const Actlikethis = lazy(() => import("./pages/Actlikethis"));
+const Captureflag = lazy(() => import("./pages/Captureflag"));
+const Codeclash = lazy(() => import("./pages/Codeclash"));
+const Codequill = lazy(() => import("./pages/Codequill"));
+const Digitaljunction = lazy(() => import("./pages/Digitaljunction"));
+const Karaoke = lazy(() => import("./pages/Karaoke"));
+const Paperpresentation = lazy(() => import("./pages/Paperpresentation"));
+const Picoftheday = lazy(() => import("./pages/Picoftheday"));
+const Quizfesta = lazy(() => import("./pages/Quizfesta"));
+const Treasurehunt = lazy(() => import("./pages/Treasurehunt"));
 
 function App() {
   return (
@@ -183,6 +184,15 @@ function App() {
             element={
               <Suspense fallback={<Loading></Loading>}>
                 <Treasurehunt></Treasurehunt>
+              </Suspense>
+            }
+          ></Route>
+
+          <Route
+            path="/coming_soon"
+            element={
+              <Suspense fallback={<Loading></Loading>}>
+                <ComingSoon></ComingSoon>
               </Suspense>
             }
           ></Route>

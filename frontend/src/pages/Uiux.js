@@ -1,8 +1,7 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
 import UiuxImg from "../images/uiux2.png";
@@ -27,8 +26,8 @@ const Uiux = () => {
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
         >
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
-          Embark on an exciting journey into the world of UI/UX design with
-          our immersive workshop!
+          Embark on an exciting journey into the world of UI/UX design with our
+          immersive workshop!
         </p>
 
         <div className="block">
@@ -56,14 +55,15 @@ const Uiux = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Workshop</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                Explore the core principles of crafting engaging user
+                experiences (UI/UX) in our immersive workshop. From wireframing
+                and prototyping to mastering design tools like Adobe XD or
+                Figma, you'll gain practical skills to create intuitive and
+                visually captivating interfaces. Whether you're new to UI/UX or
+                aiming to refine your expertise, our workshop provides hands-on
+                training and expert insights to propel your career in the
+                dynamic realm of design. Secure your spot today and embark on
+                your path to becoming a UI/UX design pro!
               </p>
 
               <h1 className="heads text-light">Agenda</h1>

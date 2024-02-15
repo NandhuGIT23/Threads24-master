@@ -9,14 +9,13 @@ import flutter from "../images/flutter2.png";
 import webdev from "../images/webdev2.png";
 
 function Workshops() {
-  
-  useEffect(() => {
-    const img = new Image();
-    img.src = './images/space_torch.jpg'; // Replace with the URL of your background image
-    img.onload = () => {
-      document.querySelector('.landingpage').style.backgroundImage = `url('${img.src}')`;
-    };
-  }, []);
+  // useEffect(() => {
+  //   const img = new Image();
+  //   img.src = './images/space_torch.jpg'; // Replace with the URL of your background image
+  //   img.onload = () => {
+  //     document.querySelector('.landingpage').style.backgroundImage = `url('${img.src}')`;
+  //   };
+  // }, []);
 
   const [isMenuOpen, setMenuOpen] = useState(false);
 

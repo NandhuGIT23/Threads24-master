@@ -96,7 +96,7 @@ const HomeFooter = () => {
           {/* <i class="bi bi-instagram"></i> */}
           <p style={{ fontSize: "12px" }}>
             <a
-              href="https://instagram.com/sonathreads?igshid=OTJlNzQ0NWM="
+              href="https://www.instagram.com/csesona?igsh=ZDE2eG83bTJtM3Fv"
               className="d-flex align-items-center justify-content-center text-center"
               style={{
                 textDecoration: "none",

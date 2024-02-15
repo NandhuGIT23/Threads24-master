@@ -1,11 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import act2 from "../images/act2.png";
 
@@ -115,6 +113,7 @@ const Actlikethis = () => {
           </div>
         </div>
       </Container>
+      {/* <ComingSoon></ComingSoon> */}
       <Footer></Footer>
     </div>
   );

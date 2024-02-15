@@ -8,11 +8,11 @@ const router = express.Router();
 
 router.post("/sendotp", async (req, res) => {
   const otp = Number(Math.floor(Math.random() * 9000) + 1000);
-  console.log(otp);
+  // console.log(otp);
   const { email } = req.body;
   const user = await OTP.findOne({ email });
   if (user) {
-    console.log("updating OTP");
+    // console.log("updating OTP");
     await OTP.updateOne({ email: email }, { $set: { otp: otp } });
 
     let transporter = nodemailer.createTransport({
@@ -205,7 +205,7 @@ router.post("/registersona", async (req, res) => {
     try {
       // console.log(typeof (user.selectedEvents));
 
-      if (user.selectedEvents == "true") {
+      if (user.selectedWorkshops == "false") {
         if (workshop == "uiux") {
           if (uiuxc >= 3) {
             res.json({ msgg: "UIUX workshop is filled", flag: false });
@@ -216,7 +216,7 @@ router.post("/registersona", async (req, res) => {
             { $inc: { uiux: 1 } }
           );
         } else if (workshop == "flutter") {
-          if (flutterc > 3) {
+          if (flutterc > 100) {
             res.json({ msgg: "Flutter workshop is filled", flag: false });
             return;
           }
@@ -255,22 +255,26 @@ router.post("/registersona", async (req, res) => {
           { $set: { selectedWorkshops: selectedWorkshops } }
         );
       }
-      if (user.selectedWorkshops != "false") {
+      if (user.selectedEvents == "false") {
         const mes = await Detail.updateOne(
           { email: email },
           { $set: { selectedEvents: selectedEvents } }
         );
       }
-      if (user.selectedEvents == "false" && user.selectedWorkshops == "false") {
-        const mes = await Detail.updateOne(
-          { email: email },
-          {
-            $set: {
-              selectedEvents: selectedEvents,
-              selectedWorkshops: selectedWorkshops,
-            },
-          }
-        );
+      //
+      // if (user.selectedWorkshops != "false") {
+      //   return res.json({
+      //     msgg: "You have already registerd for workshops",
+      //     flag: false,
+      //   });
+      // }
+      //
+
+      if (user.selectedEvents == "true" && user.selectedWorkshops != "false") {
+        return res.json({
+          msgg: "You have already registerd for both events and workshop",
+          flag: false,
+        });
       }
     } catch (e) {
       console.log(e);
@@ -284,7 +288,7 @@ router.post("/registersona", async (req, res) => {
     try {
       if (workshop == "uiux") {
         if (uiuxc > 5) {
-          console.log("Count exceeded");
+          // console.log("Count exceeded");
 
           return res.json({ msgg: "UIUX workshop is filled", flag: false });
         }
@@ -341,7 +345,7 @@ router.post("/registersona", async (req, res) => {
       // res.status(200);
       // res.status(200).json(detail);
     } catch (error) {
-      console.log(error.message);
+      // console.log(error.message);
       res.status(400).json({ error: error.message });
     }
   }

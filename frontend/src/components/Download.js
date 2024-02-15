@@ -7,7 +7,7 @@ function Download({ user }) {
 
   useEffect(() => {
     const generateQRCode = async () => {
-      console.log(user._id);
+      // console.log(user._id);
       setQr(
         <div className="setup">
           <QRCodeSVG
