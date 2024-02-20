@@ -47,7 +47,7 @@ const WebDevelopment = () => {
               <div className="details text-center">
                 {/* <FontAwesomeIcon icon={faClock} className="mr-2" /> */}
                 <p className="detailsTxt text-light">
-                  Date: 24/02/2023, Time: 10AM - 4PM
+                  Date: 23/02/2023, Time: 10AM - 4PM
                 </p>
               </div>
               <div className="details text-center">
@@ -71,20 +71,21 @@ const WebDevelopment = () => {
               <h1 className="heads text-light">Agenda</h1>
               <ul className="text-light">
                 <li>Introduction to Web Development</li>
+                <li>HTML Basics</li>
+                <li>CSS Styling</li>
+                <li>JavaScript Fundamentals</li>
+                <li>PHP Basics</li>
+                <li>Database Connectivity using XAMPP </li>
+                <li>React Overview </li>
+                <li>Q&A and Closing </li>
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              <h1 className="heads text-light">Contact:</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
-              </ul>
-
-              <h1 className="heads text-light">Contact</h1>
-              <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Karthikeyan RV: 9751990206</li>
+                <li>Nelson Mandela S: 8667895705</li>
               </ul>
             </Col>
           </Row>
@@ -106,13 +107,13 @@ const WebDevelopment = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
 

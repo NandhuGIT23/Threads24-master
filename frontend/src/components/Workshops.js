@@ -40,6 +40,8 @@ function Workshops() {
               interest. During the workshop, the expert will typically lead the
               participants through a series of activities or demonstrations,
               providing instruction and feedback along the way.
+              <br />
+              <strong>Date: 23.02.2024</strong>
             </p>
             <div className="d-flex justify-content-center my-3">
               <Link className="register_btn btn2" to="/register">
@@ -53,7 +55,7 @@ function Workshops() {
             <div>
               <hr style={{ color: "white" }} />
               <p className="text-light">
-                Note: Click on the tiles to know more about the workshops
+                Note: Click on the card to know more about the workshop
               </p>
             </div>
             <div className="row d-flex justify-content-around">

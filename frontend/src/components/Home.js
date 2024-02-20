@@ -3,6 +3,7 @@ import { Navbar1 } from "./Navbar1";
 import HomeFooter from "./HomeFooter";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { Link } from "react-router-dom";
+import ComingSoon from "../pages/ComingSoon";
 
 const Home = () => {
   const scrollToTop = () => {
@@ -27,22 +28,29 @@ const Home = () => {
               A Journey of Discovery and Innovation at Threads' 24, Where Ideas
               Unravel and Knowledge Weaves its Intricate Patterns
             </p>
-            {/* <a className="register_btn" href="/register" target="_blank">
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              <span> </span>
-              Register NOW
-            </a> */}
-            <p style={{ fontSize: "0.8em" }} className="primary-text2">
-              Sona College of Technology <br />
-              Department of Computer Science and Engineering
+            <p style={{ fontSize: "0.9em" }} className="primary-text2">
+              With one payment, participants gain access to all events <br />
+              Participate and Win exciting prizes!!!
             </p>
           </div>
         </div>
       </div>
       <div className="section2">
         <div class="content-cards1">
+          <Link
+            onClick={scrollToTop}
+            style={{ textDecoration: "none" }}
+            to="/workshops"
+          >
+            <div className="card1">
+              <h2 className="btn-text-gradient--gold dark">4 Workshops</h2>
+              <p className="subtitle1 px-1">
+                Unlock Your Potential: Immerse Yourself in 4 Inspiring Workshops
+                to Learn, Create, and Grow <br />
+                <strong>Click to know more!!</strong>
+              </p>
+            </div>
+          </Link>
           <Link
             onClick={scrollToTop}
             style={{ textDecoration: "none" }}
@@ -79,16 +87,7 @@ const Home = () => {
             onClick={scrollToTop}
             style={{ textDecoration: "none" }}
             to="/workshops"
-          >
-            <div className="card1">
-              <h2 className="btn-text-gradient--gold dark">4 Workshops</h2>
-              <p className="subtitle1 px-1">
-                Unlock Your Potential: Immerse Yourself in 4 Inspiring Workshops
-                to Learn, Create, and Grow <br />
-                <strong>Click to know more!!</strong>
-              </p>
-            </div>
-          </Link>
+          ></Link>
         </div>
         <Link className="register_btn btn2" to="/register">
           <span> </span>
@@ -107,7 +106,7 @@ const Home = () => {
         className="mt-5"
       >
         <p
-          style={{ fontSize: "0.8em", textAlign: "center" }}
+          style={{ fontSize: "1em", textAlign: "center", color: "white" }}
           className="primary-text2"
         >
           <u>For Queries, Contact:</u> <br />
@@ -137,6 +136,7 @@ const Home = () => {
 
       <HomeFooter></HomeFooter>
     </div>
+    // <ComingSoon></ComingSoon>
   );
 };
 

@@ -7,7 +7,7 @@ import Navbar1 from "../components/Navbar1";
 import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import codeclash from "../images/codeclash.png";
-
+import { Link } from "react-router-dom";
 
 const Codeclash = () => {
   return (
@@ -28,8 +28,8 @@ const Codeclash = () => {
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
         >
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
-          Embark on an exciting journey into the world of UI/UX design with
-          our immersive workshop!
+          {/* Embark on an exciting journey into the world of UI/UX design with our
+          immersive workshop! */}
         </p>
 
         <div className="block">
@@ -57,33 +57,38 @@ const Codeclash = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                Team size: Solo or duo
+                <br />
+                Round 1: <br />
+                Tech MCQs - Number of Questions: 25 <br /> Question Types: -
+                Guess the output from provided code snippets. - Debugging errors
+                in given code snippets. <br /> Multiple-choice questions (MCQs)
+                on basic data structure fundamentals. - MCQs related to computer
+                science concepts ( Puzzles ). - Snippet form : General
+                pseudo-code <br />
+                Scoring:Points awarded based on correctness and speed.
+                <br />
+                Round 2: Blind Coding <br /> Challenge: <br />
+                Participants will receive sample inputs and outputs. <br />{" "}
+                Objective: Code a solution without explicit problem statements.
               </p>
 
-              <h1 className="heads text-light">Agenda</h1>
+              {/* <h1 className="heads text-light">Agenda</h1>
               <ul className="text-light">
-                <li>Introduction to UI/UX Design</li>
-                {/* <li>Hands-on sessions on automation tools</li> */}
-                {/* <li>Case studies and real-world applications</li> */}
-              </ul>
+                <li>Introduction to UI/UX Design</li> */}
+              {/* <li>Hands-on sessions on automation tools</li> */}
+              {/* <li>Case studies and real-world applications</li> */}
+              {/* </ul> */}
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Pranav Jadhav: 9345268568</li>
               </ul>
             </Col>
           </Row>
@@ -95,8 +100,8 @@ const Codeclash = () => {
         >
           <br />
           <p className="bottomTxt text-light">
-            Don't miss out on this opportunity to enhance your skills and
-            knowledge in Flutter development. Reserve your spot now!
+            Don't miss out on this opportunity to showcase your skills and
+            knowledge in coding. Reserve your spot now!
           </p>
           <div
             style={{
@@ -105,13 +110,13 @@ const Codeclash = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

@@ -6,6 +6,8 @@ import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
 import UiuxImg from "../images/uiux2.png";
 import Footer from "../components/Footer";
+import { Link } from "react-router-dom";
+
 
 const Uiux = () => {
   return (
@@ -28,6 +30,8 @@ const Uiux = () => {
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
           Embark on an exciting journey into the world of UI/UX design with our
           immersive workshop!
+          <br />
+          <strong>NOTE: Participants must bring their own laptop</strong>
         </p>
 
         <div className="block">
@@ -44,7 +48,7 @@ const Uiux = () => {
               <div className="details text-center">
                 {/* <FontAwesomeIcon icon={faClock} className="mr-2" /> */}
                 <p className="detailsTxt text-light">
-                  Date: 24/02/2023, Time: 10AM - 4PM
+                  Date: 23/02/2023, Time: 10AM - 4PM
                 </p>
               </div>
               <div className="details text-center">
@@ -69,20 +73,23 @@ const Uiux = () => {
               <h1 className="heads text-light">Agenda</h1>
               <ul className="text-light">
                 <li>Introduction to UI/UX Design</li>
+                <li>User Interface</li>
+                <li>User Experience</li>
+                <li>Figma</li>
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Sanjay Raj G M: 9080781942</li>
+                <li>Sripauldaniel L: 6380519953</li>
               </ul>
             </Col>
           </Row>
@@ -95,7 +102,7 @@ const Uiux = () => {
           <br />
           <p className="bottomTxt text-light">
             Don't miss out on this opportunity to enhance your skills and
-            knowledge in Flutter development. Reserve your spot now!
+            knowledge in UI/UX designing. Reserve your spot now!
           </p>
           <div
             style={{
@@ -104,13 +111,13 @@ const Uiux = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

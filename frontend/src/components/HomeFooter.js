@@ -62,7 +62,7 @@ const HomeFooter = () => {
         {/* <h1 className="footerHeadTxt btn-text-gradient--gold">ABOUT US</h1> */}
         <p>
           <strong className="btn-text-gradient--gold">Threads - </strong>
-          Our symposium comprises of 3 workshops which will provide hands-on
+          Our symposium comprises of 4 workshops which will provide hands-on
           learning experience on latest technologies. And, there are 5 technical
           events & 5 non-technical events ensuring a diversified learning
           experience filled with fun and interactions. Winners of the respective

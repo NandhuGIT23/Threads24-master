@@ -33,6 +33,8 @@ const CyberSecurity = () => {
           vulnerabilities, and fortify your digital assets against evolving
           threats. Don't miss this opportunity to enhance your cybersecurity
           skills and protect what matters most. Reserve your spot today!
+          <br />
+          
         </p>
 
         <div className="block">
@@ -49,7 +51,7 @@ const CyberSecurity = () => {
               <div className="details text-center">
                 {/* <FontAwesomeIcon icon={faClock} className="mr-2" /> */}
                 <p className="detailsTxt text-light">
-                  Date: 24/02/2023, Time: 10AM - 4PM
+                  Date: 23/02/2023, Time: 10AM - 4PM
                 </p>
               </div>
               <div className="details text-center">
@@ -73,20 +75,25 @@ const CyberSecurity = () => {
               <h1 className="heads text-light">Agenda</h1>
               <ul className="text-light">
                 <li>Introduction to Cyber Security</li>
+                <li>Explaining Virtual Machines</li>
+                <li>Packet sniffing - Wireshark</li>
+                <li>Network Scanner - NMAP</li>
+                <li>Web req analysis - Burpsuite</li>
+                <li>Explaining Attacks: DOS, DDOS, Phishing, SQL injection</li>
+                <li>Making our own free storage server with old laptop</li>
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Neelakshi S: 6379682291</li>
               </ul>
             </Col>
           </Row>
@@ -108,13 +115,13 @@ const CyberSecurity = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
 

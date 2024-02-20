@@ -46,9 +46,13 @@ function Events() {
             <p className="text-light ">
               Don't miss out on one of the most exciting events that you will
               ever experience. Get ready to be excited and enhanced.
+              <br />
+              <strong>
+                With one payment, participants gain access to all events.
+              </strong>
             </p>
             <p className="text-light">
-              Note: Click on the tiles to know more about the events
+              Note: Click on the card to know more about the event
             </p>
             <div className="d-flex justify-content-center my-3">
               <Link className="register_btn btn2" to="/register">
@@ -67,8 +71,8 @@ function Events() {
             <div className="row  d-flex justify-content-around ">
               <Link
                 onClick={scrollToTop}
-                to="/coming_soon"
-                // to="/Codeclash"
+                // to="/coming_soon"
+                to="/Codeclash"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -93,8 +97,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/coming_soon"
-                // to="/Paperpresentation"
+                // to="/coming_soon"
+                to="/Paperpresentation"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -119,8 +123,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                // to="/Codequill"
-                to="/coming_soon"
+                to="/Codequill"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -144,8 +148,8 @@ function Events() {
                 </div>
               </Link>
               <Link
-                // to="/Captureflag"
-                to="/coming_soon"
+                to="/Captureflag"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -170,8 +174,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                // to="/Digitaljunction"
-                to="/coming_soon"
+                to="/Digitaljunction"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -198,8 +202,8 @@ function Events() {
               <p className="text-light h3 mt-3">Non-Technical Events</p>
               <Link
                 onClick={scrollToTop}
-                // to="/Quizfesta"
-                to="/coming_soon"
+                to="/Quizfesta"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -224,8 +228,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                // to="/actlikethis"
-                to="/coming_soon"
+                to="/actlikethis"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -250,8 +254,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                // to="/Treasurehunt"
-                to="/coming_soon"
+                to="/Treasurehunt"
+                // to="/coming_soon"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -276,8 +280,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/coming_soon"
-                // to="/Picoftheday"
+                // to="/coming_soon"
+                to="/Picoftheday"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >
@@ -302,8 +306,8 @@ function Events() {
               </Link>
               <Link
                 onClick={scrollToTop}
-                to="/coming_soon"
-                // to="/Karaoke"
+                // to="/coming_soon"
+                to="/Karaoke"
                 className="col-5 col-md-2 my-2 rounded-border hover"
                 style={{ textDecoration: "none" }}
               >

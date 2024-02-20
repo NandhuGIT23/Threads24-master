@@ -1,14 +1,12 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
-import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import quizholic from "../images/quizholic.png";
-
+import { Link } from "react-router-dom";
 
 const Quizfesta = () => {
   return (
@@ -29,8 +27,8 @@ const Quizfesta = () => {
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
         >
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
-          Embark on an exciting journey into the world of UI/UX design with
-          our immersive workshop!
+          {/* Embark on an exciting journey into the world of UI/UX design with
+          our immersive workshop! */}
         </p>
 
         <div className="block">
@@ -58,33 +56,34 @@ const Quizfesta = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                Quiz Festa is a non-technical quiz event that consists of two
+                rounds (the elimination and final rounds).<br/>
+                 The team should have
+                two members.<br/>
+                 Round 1: The first round will be connection. The
+                sequence of images will be displayed, and you need to find that
+                particular word. <br/>
+                Round 2: The second round is similar to the
+                first round, but the difficulty level is high.
               </p>
 
-              <h1 className="heads text-light">Agenda</h1>
+              {/* <h1 className="heads text-light">Agenda</h1> */}
               <ul className="text-light">
-                <li>Introduction to UI/UX Design</li>
+                {/* <li>Introduction to UI/UX Design</li> */}
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Srikanth: 9345583144</li>
+                <li>Sarvesh: 9345315384</li>
               </ul>
             </Col>
           </Row>
@@ -95,10 +94,10 @@ const Quizfesta = () => {
           style={{ width: "100%" }}
         >
           <br />
-          <p className="bottomTxt text-light">
+          {/* <p className="bottomTxt text-light">
             Don't miss out on this opportunity to enhance your skills and
             knowledge in Flutter development. Reserve your spot now!
-          </p>
+          </p> */}
           <div
             style={{
               display: "flex",
@@ -106,13 +105,13 @@ const Quizfesta = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

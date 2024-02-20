@@ -30,8 +30,8 @@ const Digitaljunction = () => {
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
         >
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
-          Embark on an exciting journey into the world of UI/UX design with our
-          immersive workshop!
+          {/* Embark on an exciting journey into the world of UI/UX design with our
+          immersive workshop! */}
         </p>
 
         <div className="block">
@@ -59,33 +59,38 @@ const Digitaljunction = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                Participants are shown technical images or diagrams, and they
+                have to connect these visuals to guess the corresponding
+                technical term or concept. It's a fun and interactive way to
+                test participants' knowledge and problem-solving skills in a
+                technical context.
+                <br />
+                Example:
+                <br />
+                Image: A light bulb.
+                <br />
+                Participants would need to guess the word "Electricity" or
+                "Lighting."This example demonstrates the basic concept of the
+                event where participants must connect the image of a light bulb
+                to the corresponding technical term or concept.
               </p>
 
-              <h1 className="heads text-light">Agenda</h1>
+              {/* <h1 className="heads text-light">Agenda</h1> */}
               <ul className="text-light">
-                <li>Introduction to UI/UX Design</li>
+                {/* <li>Introduction to UI/UX Design</li> */}
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Bhoopesh M: 7339499111</li>
               </ul>
             </Col>
           </Row>
@@ -107,13 +112,13 @@ const Digitaljunction = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

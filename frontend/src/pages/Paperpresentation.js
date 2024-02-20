@@ -9,7 +9,6 @@ import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import paperPresentation from "../images/paperPresentation.png";
 
-
 const Paperpresentation = () => {
   return (
     <div
@@ -23,14 +22,16 @@ const Paperpresentation = () => {
     >
       <Navbar1 />
       <Container fluid style={{ backgroundColor: "rgb(9,9,9,0.3)" }}>
-        <h1 className="eventName welcometag text-light mx-5">PAPER PRESENTATION</h1>
+        <h1 className="eventName welcometag text-light mx-5">
+          PAPER PRESENTATION
+        </h1>
         <p
           className="eventDesc mx-5 mb-5 text-light"
           // style={{ textAlign: "center", marginTop: "20px", color: "#E4A732" }}
         >
           {/* <FontAwesomeIcon icon={faClock} size="xs" className="mr-2" /> */}
-          Embark on an exciting journey into the world of UI/UX design with
-          our immersive workshop!
+          {/* Embark on an exciting journey into the world of UI/UX design with our
+          immersive workshop! */}
         </p>
 
         <div className="block">
@@ -58,33 +59,36 @@ const Paperpresentation = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Discover the fundamentals of building dynamic websites and web
-                applications, from HTML and CSS to JavaScript and beyond. Learn
-                essential tools and techniques for creating responsive and
-                visually stunning web experiences. Whether you're a beginner or
-                looking to level up your skills, our workshop offers hands-on
-                learning and expert guidance to help you succeed in the
-                fast-paced world of web development. Reserve your spot now and
-                kickstart your journey to becoming a web development pro!
+                *Participants can choose any technical topic.
+                <br />
+                *The team size is limited to a maximum of one to three members.
+                <br />
+                *Time allotted to the participants to present their PPT is 6 to
+                8 minutes. <br />
+                *The PPT shall have maximum of 8 slides. *Participants are
+                required to submit their abstracts on or before (22/02/2024)
+                using given Gmail (paperpresentationsona@gmail.com).
+                <br />
+                *Gmail format should contains (Name of the participants, topic
+                Name, phone number, College name , department name).
               </p>
 
-              <h1 className="heads text-light">Agenda</h1>
+              {/* <h1 className="heads text-light">Agenda</h1> */}
               <ul className="text-light">
-                <li>Introduction to UI/UX Design</li>
+                {/* <li>Introduction to UI/UX Design</li> */}
                 {/* <li>Hands-on sessions on automation tools</li> */}
                 {/* <li>Case studies and real-world applications</li> */}
               </ul>
 
-              <h1 className="heads text-light">Instructors</h1>
+              {/* <h1 className="heads text-light">Instructors</h1>
               <ul className="points text-light">
                 <li>Updating soon</li>
                 <li>Updating soon</li>
-              </ul>
+              </ul> */}
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Updating soon</li>
-                <li>Updating soon</li>
+                <li>Muniappan: 9025467181</li>
               </ul>
             </Col>
           </Row>
@@ -95,10 +99,10 @@ const Paperpresentation = () => {
           style={{ width: "100%" }}
         >
           <br />
-          <p className="bottomTxt text-light">
+          {/* <p className="bottomTxt text-light">
             Don't miss out on this opportunity to enhance your skills and
             knowledge in Flutter development. Reserve your spot now!
-          </p>
+          </p> */}
           <div
             style={{
               display: "flex",
@@ -106,13 +110,13 @@ const Paperpresentation = () => {
               alignItems: "center",
             }}
           >
-            <a className="register_btn btn2" href="/register" target="_blank">
+            <Link className="register_btn btn2" to="/register">
               <span> </span>
               <span> </span>
               <span> </span>
               <span> </span>
               Register NOW
-            </a>
+            </Link>
           </div>
         </div>
       </Container>

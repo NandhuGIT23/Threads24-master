@@ -131,9 +131,10 @@ const Register = () => {
 
     if (otpVerificationResponse.status == 200) {
       if (
-        details.email.includes("cse@sonatech.ac.in") ||
-        details.email.includes("aml@sonatech.ac.in") ||
-        details.email.includes("csd@sonatech.ac.in")
+        (details.email.includes("cse@sonatech.ac.in") ||
+          details.email.includes("aml@sonatech.ac.in") ||
+          details.email.includes("csd@sonatech.ac.in")) &&
+        checked2 == false
       ) {
         console.log("EMail: ", details.email);
         const registrationResponse = await fetch(
@@ -549,7 +550,7 @@ const Register = () => {
               <br />
 
               <br />
-              <button className="submitBtn" id="nextBtn">
+              <button style={{cursor:"pointer"}} className="submitBtn" id="nextBtn">
                 NEXT
               </button>
               <br />
@@ -569,15 +570,37 @@ const Register = () => {
                   Scan and pay through the QR Code or take a screenshot of the
                   QR code and upload it in the UPI app to make the payment.
                 </p>{" "}
-                {selectedEvents && !selectedWorkshops && (
-                  <img className="qr" src={eventQR} alt="" />
-                )}
-                {selectedEvents && selectedWorkshops && (
-                  <img className="qr" src={workshopEventsQr} alt="" />
-                )}
-                {!selectedEvents && selectedWorkshops && (
-                  <img className="qr" src={workshopQR} alt="" />
-                )}
+                {/* outside clg, events */}
+                {selectedEvents &&
+                  !selectedWorkshops &&
+                  !email.includes("cse@sonatech.ac.in") &&
+                  !email.includes("aml@sonatech.ac.in") &&
+                  !email.includes("csd@sonatech.ac.in") && (
+                    <img className="qr" src={eventQR} alt="" />
+                  )}
+                {/* outside clg,  workshops events */}
+                {selectedEvents &&
+                  selectedWorkshops &&
+                  !email.includes("cse@sonatech.ac.in") &&
+                  !email.includes("aml@sonatech.ac.in") &&
+                  !email.includes("csd@sonatech.ac.in") && (
+                    <img className="qr" src={workshopEventsQr} alt="" />
+                  )}
+                {/* outside clg, workshops */}
+                {!selectedEvents &&
+                  selectedWorkshops &&
+                  !email.includes("cse@sonatech.ac.in") &&
+                  !email.includes("aml@sonatech.ac.in") &&
+                  !email.includes("csd@sonatech.ac.in") && (
+                    <img className="qr" src={workshopQR} alt="" />
+                  )}
+                {/*  inside clg, workshops */}
+                {selectedWorkshops &&
+                  (email.includes("cse@sonatech.ac.in") ||
+                    email.includes("aml@sonatech.ac.in") ||
+                    email.includes("csd@sonatech.ac.in")) && (
+                    <img className="qr" src={workshopQR} alt="" />
+                  )}
                 <p>Enter your 12 digit transaction ID: </p>
                 <input
                   className="input"
