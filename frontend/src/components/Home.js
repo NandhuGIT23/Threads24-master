@@ -28,8 +28,11 @@ const Home = () => {
               A Journey of Discovery and Innovation at Threads' 24, Where Ideas
               Unravel and Knowledge Weaves its Intricate Patterns
             </p>
-            <p style={{ fontSize: "0.9em" }} className="primary-text2">
-              With one payment, participants gain access to all events <br />
+            <p
+              style={{ fontSize: "0.8em", color: "rgb(250,250,220)" }}
+              className="primary-text2"
+            >
+              On spot registrations available <br />
               Participate and Win exciting prizes!!!
             </p>
           </div>
@@ -116,6 +119,11 @@ const Home = () => {
           Senthil Kumar - 9994521119
           <br />
           Rampachan - 8903837949
+          <br />
+          <br />
+          For registration queries, Contact:
+          <br />
+          Vijay: 8270202119
         </p>
       </div>
 

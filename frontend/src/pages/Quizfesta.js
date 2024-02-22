@@ -57,14 +57,15 @@ const Quizfesta = () => {
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
                 Quiz Festa is a non-technical quiz event that consists of two
-                rounds (the elimination and final rounds).<br/>
-                 The team should have
-                two members.<br/>
-                 Round 1: The first round will be connection. The
-                sequence of images will be displayed, and you need to find that
-                particular word. <br/>
-                Round 2: The second round is similar to the
-                first round, but the difficulty level is high.
+                rounds (the elimination and final rounds).
+                <br />
+                The team should have two members.
+                <br />
+                Round 1: The first round will be connection. The sequence of
+                images will be displayed, and you need to find that particular
+                word. <br />
+                Round 2: The second round is similar to the first round, but the
+                difficulty level is high.
               </p>
 
               {/* <h1 className="heads text-light">Agenda</h1> */}
@@ -82,8 +83,8 @@ const Quizfesta = () => {
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Srikanth: 9345583144</li>
-                <li>Sarvesh: 9345315384</li>
+                <li>Naveen balaji : 8668092226</li>
+                <li>Dharshini :6380607536</li>
               </ul>
             </Col>
           </Row>

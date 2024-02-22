@@ -84,8 +84,8 @@ const WebDevelopment = () => {
 
               <h1 className="heads text-light">Contact:</h1>
               <ul className="points text-light">
-                <li>Karthikeyan RV: 9751990206</li>
-                <li>Nelson Mandela S: 8667895705</li>
+                <li>Infant Calvin: 6369631371</li>
+                <li>Kathick M: 7708171276</li>
               </ul>
             </Col>
           </Row>

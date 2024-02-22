@@ -89,20 +89,25 @@ const Register = () => {
   };
 
   const sendOTP = async (e) => {
-    setShowModal(true);
-    setShowForm(false);
+    if (selectedEvents == false && checked2 == false) {
+      e.preventDefault();
+      alert("Select atleast one participation");
+    } else {
+      setShowModal(true);
+      setShowForm(false);
 
-    const response = await fetch(
-      "https://threads24.onrender.com/threads/sendotp",
-      {
-        method: "POST",
-        body: JSON.stringify({ email: email }),
-        headers: {
-          "Content-Type": "application/json",
-        },
-      }
-    );
-    console.log("OTP sent");
+      const response = await fetch(
+        "https://threads24.onrender.com/threads/sendotp",
+        {
+          method: "POST",
+          body: JSON.stringify({ email: email }),
+          headers: {
+            "Content-Type": "application/json",
+          },
+        }
+      );
+      console.log("OTP sent");
+    }
   };
   const handleSubmit = async (e) => {
     e.preventDefault();
@@ -249,6 +254,7 @@ const Register = () => {
             <a
               className="register_btn btn2 "
               onClick={handleSubmit}
+              style={{ cursor: "pointer" }}
               target="_blank"
             >
               <span> </span>
@@ -319,7 +325,7 @@ const Register = () => {
                   onClick={handleCollegeChange}
                 />
                 <label htmlFor="others" className="workShopTxt">
-                  Others
+                  Others (Your college name)
                 </label>
                 <br />
               </div>
@@ -411,7 +417,7 @@ const Register = () => {
                   <br />
                 </div>
 
-                <div className="radioBtn">
+                {/* <div className="radioBtn">
                   <input
                     type="radio"
                     id="web_development"
@@ -422,9 +428,9 @@ const Register = () => {
                   />
                   <label htmlFor="cyber" className="workShopTxt">
                     Web Development
-                  </label>
-                  <br />
-                </div>
+                  </label> */}
+                {/* <br /> */}
+                {/* </div> */}
 
                 <div className="radioBtn">
                   <input
@@ -532,7 +538,10 @@ const Register = () => {
               <br />
               <br />
 
-              <label htmlFor="email">Email ID</label>
+              <label htmlFor="email">
+                Email ID (Note: If you are from Sona College, kindly enter your
+                sonatech mail ID)
+              </label>
               <br />
               <input
                 type="email"
@@ -550,7 +559,11 @@ const Register = () => {
               <br />
 
               <br />
-              <button style={{cursor:"pointer"}} className="submitBtn" id="nextBtn">
+              <button
+                style={{ cursor: "pointer" }}
+                className="submitBtn"
+                id="nextBtn"
+              >
                 NEXT
               </button>
               <br />
@@ -569,6 +582,14 @@ const Register = () => {
                 <p>
                   Scan and pay through the QR Code or take a screenshot of the
                   QR code and upload it in the UPI app to make the payment.
+                  <br />
+                  Or else make UPI payment to: <strong>8270202119</strong>
+                  <br />
+                  Only events: 300rs
+                  <br />
+                  Only Workshop: 200rs
+                  <br />
+                  Both events and Workshops: 500rs
                 </p>{" "}
                 {/* outside clg, events */}
                 {selectedEvents &&

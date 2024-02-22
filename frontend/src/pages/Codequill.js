@@ -58,17 +58,17 @@ const Codequill = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Participation is restricted to solo participants only.
+                Participation is restricted to solo / duo participants only.
                 <br />
-                Round 1:
+                Round 1: Consists of 30 multiple-choice questions (MCQs)
+                covering programming languages like Java, C, Python, and C++.
                 <br />
-                Consists of 30 multiple-choice questions (MCQs) covering
-                programming languages like Java, C, Python, and C++.
-                <br />
-                Questions range from easy to medium difficulty. <br />
+                Questions range from easy to medium difficulty.
+                <br /> Pen and paper test <br />
                 Round 2: <br />
-                MCQs include programming languages of all types, with questions
-                set at a hard difficulty level.
+                Questions will de displayed in ppt .MCQs include programming
+                languages of all types, with questions set at a hard difficulty
+                level.
               </p>
 
               {/* <h1 className="heads text-light">Agenda</h1> */}

@@ -1,10 +1,9 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import codeclash from "../images/codeclash.png";
 import { Link } from "react-router-dom";
@@ -88,7 +87,8 @@ const Codeclash = () => {
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Pranav Jadhav: 9345268568</li>
+                <li>Rupasri S Santana: 9363300324</li>
+                <li>Nandhini P K : 8610641231</li>
               </ul>
             </Col>
           </Row>

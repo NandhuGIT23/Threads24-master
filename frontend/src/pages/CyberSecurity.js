@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
@@ -94,6 +94,7 @@ const CyberSecurity = () => {
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
                 <li>Neelakshi S: 6379682291</li>
+                <li>Priyankha R S: 8220170948</li>
               </ul>
             </Col>
           </Row>

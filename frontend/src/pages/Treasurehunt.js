@@ -8,7 +8,6 @@ import Footer from "../components/Footer";
 import treassure from "../images/treassure.png";
 import { Link } from "react-router-dom";
 
-
 const Treasurehunt = () => {
   return (
     <div
@@ -57,8 +56,22 @@ const Treasurehunt = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                Our treasure hunts are information-based or puzzle hunts, in
-                which teams use their collective brainpower to solve clues.
+                Team size: 3 <br /> Round 1:
+                <br /> Type- 1<br /> 1.Picture matching -10 <br />
+                2. Movie finding-10 <br />
+                3. Find the song-10 <br />
+                Question Types:-
+                <br /> 1.search and find the exact image that are shown.
+                <br /> 2. Find movie name from given image.
+                <br /> 3. Find Tamil song from English lyrics. <br />
+                Rules:
+                <br /> Don't use google scan only type and search is allowed.
+                Round 2:
+                <br />
+                <br /> Treasure hunt Type- Find places using clues that are
+                given. <br />
+                Rules:- <br />
+                find the places in the given order.
               </p>
 
               {/* <h1 className="heads text-light">Agenda</h1>
@@ -74,10 +87,10 @@ const Treasurehunt = () => {
                 <li>Updating soon</li>
               </ul> */}
 
-              {/* <h1 className="heads text-light">Contact</h1> */}
+              <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
-                <li>Sarvesh: 9345315384</li>
-                <li>Srikanth: 9345583144</li>
+                <li>Rithika ezhil: 8825758229</li>
+                <li>Priyadharshini R: 9080139501</li>
               </ul>
             </Col>
           </Row>

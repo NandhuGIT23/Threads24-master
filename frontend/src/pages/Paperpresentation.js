@@ -1,11 +1,10 @@
 import React from "react";
-import { Container, Row, Col, Button } from "react-bootstrap";
+import { Container, Row, Col } from "react-bootstrap";
 // import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 // import { faClock, faMapMarkerAlt } from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 import spaceTorchImage from "../images/space_torch.jpg";
 import Navbar1 from "../components/Navbar1";
-import CyberSecurityImg from "../images/cybersecurity.png";
 import Footer from "../components/Footer";
 import paperPresentation from "../images/paperPresentation.png";
 
@@ -59,18 +58,23 @@ const Paperpresentation = () => {
             <Col md={6}>
               <h1 className="heads text-light">About the Event</h1>
               <p className="points text-light">
-                *Participants can choose any technical topic.
+                Join our paper presentation event.
                 <br />
-                *The team size is limited to a maximum of one to three members.
+                This is your golden opportunity to showcase your expertise and
+                compete across all domains of computer science and engineering!{" "}
                 <br />
-                *Time allotted to the participants to present their PPT is 6 to
-                8 minutes. <br />
-                *The PPT shall have maximum of 8 slides. *Participants are
-                required to submit their abstracts on or before (22/02/2024)
-                using given Gmail (paperpresentationsona@gmail.com).
-                <br />
-                *Gmail format should contains (Name of the participants, topic
-                Name, phone number, College name , department name).
+                "Innovation is seeing what everybody has seen and thinking what
+                nobody has thought." <br />
+                Team size : Maximum 3 members
+                <br /> Rules: <br />
+                Bring your unique ideas
+                <br /> PPT should not exceed 8 slides <br />
+                All Domains in CSE is allowed (eg: AI , ML and etc..) <br />
+                Bring Hard copy of your PPT and abstract <br />
+                Bring Soft copy of your PPT <br />
+                PPT should consist of Title , Problem statement , Objective,
+                Related works , Existing System, Proposed system , Advantages of
+                Proposed over Existing system , results and conclusion
               </p>
 
               {/* <h1 className="heads text-light">Agenda</h1> */}
@@ -88,6 +92,7 @@ const Paperpresentation = () => {
 
               <h1 className="heads text-light">Contact</h1>
               <ul className="points text-light">
+                <li>Elansuriyaa P 6379221899</li>
                 <li>Muniappan: 9025467181</li>
               </ul>
             </Col>
