@@ -97,8 +97,7 @@ const Register = () => {
       setShowForm(false);
 
       const response = await fetch(
-        // "https://threads24.onrender.com/threads/sendotp",
-        "threads/sendotp",
+        "https://threads24.onrender.com/threads/sendotp",
         {
           method: "POST",
           body: JSON.stringify({ email: email }),
@@ -125,8 +124,7 @@ const Register = () => {
     };
 
     const otpVerificationResponse = await fetch(
-      // "https://threads24.onrender.com/threads/verifyotp",
-      "threads/verifyotp",
+      "https://threads24.onrender.com/threads/verifyotp",
       {
         method: "POST",
         body: JSON.stringify({ email: email, otp: otp }),
@@ -144,8 +142,7 @@ const Register = () => {
       ) {
         console.log("EMail: ", details.email);
         const registrationResponse = await fetch(
-          // "https://threads24.onrender.com/threads/registersona",
-          "threads/registersona",
+          "https://threads24.onrender.com/threads/registersona",
           {
             method: "POST",
             body: JSON.stringify(details),
@@ -202,8 +199,7 @@ const Register = () => {
     console.log(UPI_id);
 
     const UPIresponse = await fetch(
-      // "https://threads24.onrender.com/threads/register",
-      "threads/register",
+      "https://threads24.onrender.com/threads/register",
       {
         method: "POST",
         body: JSON.stringify({ details, UPI_id }),
