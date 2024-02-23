@@ -97,7 +97,8 @@ const Register = () => {
       setShowForm(false);
 
       const response = await fetch(
-        "https://threads24.onrender.com/threads/sendotp",
+        // "https://threads24.onrender.com/threads/sendotp",
+        "threads/sendotp",
         {
           method: "POST",
           body: JSON.stringify({ email: email }),
@@ -124,7 +125,8 @@ const Register = () => {
     };
 
     const otpVerificationResponse = await fetch(
-      "https://threads24.onrender.com/threads/verifyotp",
+      // "https://threads24.onrender.com/threads/verifyotp",
+      "threads/verifyotp",
       {
         method: "POST",
         body: JSON.stringify({ email: email, otp: otp }),
@@ -136,14 +138,14 @@ const Register = () => {
 
     if (otpVerificationResponse.status == 200) {
       if (
-        (details.email.includes("cse@sonatech.ac.in") ||
-          details.email.includes("aml@sonatech.ac.in") ||
-          details.email.includes("csd@sonatech.ac.in")) &&
-        checked2 == false
+        details.email.includes("cse@sonatech.ac.in") ||
+        details.email.includes("aml@sonatech.ac.in") ||
+        details.email.includes("csd@sonatech.ac.in")
       ) {
         console.log("EMail: ", details.email);
         const registrationResponse = await fetch(
-          "https://threads24.onrender.com/threads/registersona",
+          // "https://threads24.onrender.com/threads/registersona",
+          "threads/registersona",
           {
             method: "POST",
             body: JSON.stringify(details),
@@ -154,14 +156,17 @@ const Register = () => {
         );
         const responseData = await registrationResponse.json();
         console.log(responseData);
-        // console.log(registrationResponse);
-        if (!responseData.flag) {
-          alert(responseData.msgg);
-        } else {
-          alert(
-            "Successfully registered! You will receive a confirmation mail shortly"
-          );
+        console.log("RESPONSE DATA: ", responseData.mssg);
+        if (responseData) {
+          alert(responseData.mssg);
         }
+        // if (!responseData.flag) {
+        //   alert(responseData.msgg);
+        // } else {
+        //   alert(
+        //     "Successfully registered! You will receive a confirmation mail shortly"
+        //   );
+        // }
         navigate("/");
         // return;
       } else {
@@ -197,7 +202,8 @@ const Register = () => {
     console.log(UPI_id);
 
     const UPIresponse = await fetch(
-      "https://threads24.onrender.com/threads/register",
+      // "https://threads24.onrender.com/threads/register",
+      "threads/register",
       {
         method: "POST",
         body: JSON.stringify({ details, UPI_id }),
@@ -206,15 +212,32 @@ const Register = () => {
         },
       }
     );
-    if (UPIresponse.status == 200) {
-      console.log("hi");
-      alert(
-        "Registered successfully!! You will receive a confirmation mail shortly once we verify your transaction"
-      );
-      navigate("/");
-    } else {
-      alert("failed");
-    }
+    // .then((res) => res.json())
+    // .then((data) => {
+    //   console.log(data);
+    // });
+    UPIresponse.json()
+      .then((responseJson) => {
+        if (responseJson) {
+          alert(responseJson.mssg);
+          navigate("/");
+        } else {
+          alert("failed");
+        }
+      })
+      .catch((error) => {
+        console.error("Error processing JSON response:", error);
+      });
+    // console.log("UPI RESP");
+    // console.log(UPIresponse);
+    // console.log(UPIresponse.mssg);
+
+    // if (UPIresponse) {
+    //   alert(UPIresponse.mssg);
+    //   navigate("/");
+    // } else {
+    //   alert("failed");
+    // }
   };
 
   return (
@@ -363,7 +386,7 @@ const Register = () => {
                 <br />
               </div>
 
-              <div className="radioBtn">
+              {/* <div className="radioBtn">
                 <input
                   type="checkbox"
                   id="workshop"
@@ -377,7 +400,7 @@ const Register = () => {
                   Workshop (23.02.2024)
                 </label>
                 <br />
-              </div>
+              </div> */}
 
               <div
                 className="hiddenDiv1"
@@ -417,7 +440,7 @@ const Register = () => {
                   <br />
                 </div>
 
-                {/* <div className="radioBtn">
+                <div className="radioBtn">
                   <input
                     type="radio"
                     id="web_development"
@@ -428,9 +451,9 @@ const Register = () => {
                   />
                   <label htmlFor="cyber" className="workShopTxt">
                     Web Development
-                  </label> */}
-                {/* <br /> */}
-                {/* </div> */}
+                  </label>
+                  <br />
+                </div>
 
                 <div className="radioBtn">
                   <input
